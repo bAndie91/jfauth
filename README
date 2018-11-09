@@ -248,6 +248,14 @@ Easy, right?  The only real difference is the jfauthd configuration; the
 pam_jfauth setup is the same on every machine where you want to use it.
 
 
+Security and Privacy
+--------------------
+
+Note, anyone with root access to a non-master machine can sniff cached 
+credentials by inspecting jfauthd process memory, and intercept in-flight
+credentials by tracing jfauthd process (using strace, ptrace).
+
+
 Frequently Asked Questions
 --------------------------
 
